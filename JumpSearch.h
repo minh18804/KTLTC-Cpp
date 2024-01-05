@@ -1,4 +1,4 @@
-int jumpSearch(int arr[], int x, int n) {
+int jumpSearch(long int arr[], int x, int n) {
     int step = sqrt(n);
     int prev = 0;
     while (arr[std::min(step, n) - 1] < x) {

@@ -1,4 +1,4 @@
-int fibonacciSearch(int arr[], int x, int n){
+int fibonacciSearch(long int arr[], int x, int n){
     int fibMm2 = 0;
     int fibMm1 = 1;
     int fibMm = fibMm2 + fibMm1;

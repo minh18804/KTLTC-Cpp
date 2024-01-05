@@ -1,4 +1,4 @@
-int exponentialSearch(int arr[], int n, int x) 
+int exponentialSearch(long int arr[], int n, int x) 
 { 
 
     if (arr[0] == x) 

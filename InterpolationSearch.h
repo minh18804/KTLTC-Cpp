@@ -1,4 +1,4 @@
-int interpolationSearch(int arr[], int lo, int hi, int x)
+int interpolationSearch(long int arr[], long int lo, long int hi, long int x)
 {
     int pos;
  
