@@ -13,7 +13,7 @@ int main(){
     std::cin >> n;
 
     int times;
-    std::cout << "Nhap so mang muon chay de so sanh thoi gian";
+    std::cout << "Nhap so mang muon chay de so sanh thoi gian: ";
     std::cin >> times;
 
     int x;
