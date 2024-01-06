@@ -1,15 +1,13 @@
-int interpolationSearch(long int arr[], long int lo, long int hi, long int x)
-{
-    int pos;
- 
-    if (lo <= hi && x >= arr[lo] && x <= arr[hi]) {
+int interpolationSearch(long int arr[], long int lo, long int hi, long int x) {
+    unsigned int pos;
+    while (lo <= hi && x >= arr[lo] && x <= arr[hi]) {
         pos = lo + (((double)(hi - lo) / (arr[hi] - arr[lo])) * (x - arr[lo]));
-    if (arr[pos] == x)
-        return pos;
-    else if(arr[pos] < x)
-        return interpolationSearch(arr, pos + 1, hi, x);
-    else
-        return interpolationSearch(arr, lo, pos - 1, x);
+        if (arr[pos] == x)
+            return pos;
+        else if(arr[pos] < x)
+            lo = pos + 1;
+        else
+            hi = pos - 1;
     }
     return -1;
 }
